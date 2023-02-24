@@ -12,4 +12,9 @@ public class Boot extends LakeObject
     public boolean wasCaught(Hook h){
         return true;
     }
+
+    public Boot(){
+      super();
+      setCost(0);
+    }
 }

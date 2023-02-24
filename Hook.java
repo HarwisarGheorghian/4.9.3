@@ -3,7 +3,7 @@
  */
 public class Hook extends LakeObject
 {
-  private int strength = 45;
+  private int strength;
 
   /*---------- accessor ----------*/
   public int getStrength() 
@@ -15,6 +15,12 @@ public class Hook extends LakeObject
   @Override
   public String say(){
     return "You now have a hook!";
+  }
+
+  public Hook(){
+    super();
+    strength = 55;
+    setCost(15);
   }
 
 }
